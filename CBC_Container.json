@@ -102,6 +102,13 @@
         },
 	{
             "color": "#00ff61",
+            "comment": "CBC Endpoint and workload EDR can monitor file and registry key modifications.\n\n",
+            "enabled": true,
+            "tactic": "defense-evasion",
+            "techniqueID": "T1070"
+        },
+	{
+            "color": "#00ff61",
             "comment": "CBC Containers can detect port scan.\n\n",
             "enabled": true,
             "tactic": "discovery",
