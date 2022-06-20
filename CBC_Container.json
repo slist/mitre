@@ -1,0 +1,85 @@
+{
+	"name": "CBC Containers",
+	"versions": {
+		"attack": "11",
+		"navigator": "4.6.4",
+		"layer": "4.3"
+	},
+	"domain": "enterprise-attack",
+	"description": "",
+	"filters": {
+		"platforms": [
+			"Containers"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false
+	},
+	"hideDisabled": false,
+	"techniques": [
+	        {
+            "color": "#00ff61",
+            "comment": "CBC Containers monitors all Node ports and Load balancers in a Dashboard.\n\n",
+            "enabled": true,
+            "tactic": "initial-access",
+            "techniqueID": "T1190"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Containers provides visibility on all running containers.\n\n",
+            "enabled": true,
+            "tactic": "execution",
+            "techniqueID": "T1610"
+        },
+		{
+            "color": "#00ff61",
+            "comment": "CBC Containers provides visibility on all running containers.\n\n",
+            "enabled": true,
+            "tactic": "defense-evasion",
+            "techniqueID": "T1610"
+        },
+		{
+            "color": "#00ff61",
+            "comment": "CBC Containers can detect port scan.\n\n",
+            "enabled": true,
+            "tactic": "discovery",
+            "techniqueID": "T1046"
+        },
+		{
+            "color": "#00ff61",
+            "comment": "CBC EDR on Linux can detect usage of docker build.\n\n",
+            "enabled": true,
+            "tactic": "defense-evasion",
+            "techniqueID": "T1612"
+        },
+		{
+            "color": "#00ff61",
+            "comment": "CBC Containers can do....\n\n",
+            "enabled": true,
+            "tactic": "privilege-escalation",
+            "techniqueID": "T1611"
+        }
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false
+}
