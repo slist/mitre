@@ -25,10 +25,17 @@
 	"techniques": [
 	        {
             "color": "#00ff61",
-            "comment": "CBC Containers monitors all Node ports and Load balancers in a Dashboard.\n\n",
+            "comment": "CBC Containers monitors all Node ports and Load balancers in CB Dashboard.\n\n",
             "enabled": true,
             "tactic": "initial-access",
             "techniqueID": "T1190"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Containers can block or monitor kubectl exec.\n\n",
+            "enabled": true,
+            "tactic": "execution",
+            "techniqueID": "T1609"
         },
         {
             "color": "#00ff61",
@@ -37,33 +44,68 @@
             "tactic": "execution",
             "techniqueID": "T1610"
         },
-		{
+        {
             "color": "#00ff61",
-            "comment": "CBC Containers provides visibility on all running containers.\n\n",
+            "comment": "CBC Endpoint can block the use of unknown application on user desktop.\n\n",
+            "enabled": true,
+            "tactic": "execution",
+            "techniqueID": "T1204"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Container can deny latest tag, limit registries, require hash tags.\n\n",
+            "enabled": true,
+            "tactic": "persistence",
+            "techniqueID": "T1525"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Endpoint and workload can monitor scheduled tasks using Audit and Remediation.\n\n",
+            "enabled": true,
+            "tactic": "persistence",
+            "techniqueID": "T1053"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Container can block various techniques to escape to host.\n\n",
+            "enabled": true,
+            "tactic": "privilege-escalation",
+            "techniqueID": "T1611"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Container can block block and enforce exploitation of privilege escalation.\n\n",
+            "enabled": true,
+            "tactic": "privilege-escalation",
+            "techniqueID": "T1068"
+        },
+        {
+            "color": "#00ff61",
+            "comment": "CBC Endpoint and workload can monitor scheduled tasks using Audit and Remediation.\n\n",
+            "enabled": true,
+            "tactic": "privilege-escalation",
+            "techniqueID": "T1053"
+        },
+	{
+            "color": "#00ff61",
+            "comment": "CBC Containers provides visibility on all running containers, and can block containers not compliant with security policy.\n\n",
             "enabled": true,
             "tactic": "defense-evasion",
             "techniqueID": "T1610"
         },
-		{
+	{
             "color": "#00ff61",
             "comment": "CBC Containers can detect port scan.\n\n",
             "enabled": true,
             "tactic": "discovery",
             "techniqueID": "T1046"
         },
-		{
+	{
             "color": "#00ff61",
             "comment": "CBC EDR on Linux can detect usage of docker build.\n\n",
             "enabled": true,
             "tactic": "defense-evasion",
             "techniqueID": "T1612"
-        },
-		{
-            "color": "#00ff61",
-            "comment": "CBC Containers can do....\n\n",
-            "enabled": true,
-            "tactic": "privilege-escalation",
-            "techniqueID": "T1611"
         }
 	],
 	"gradient": {
