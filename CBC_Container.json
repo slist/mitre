@@ -53,6 +53,13 @@
         },
         {
             "color": "#00ff61",
+            "comment": "CBC Endpoint and workload can monitor scheduled tasks using Audit and Remediation.\n\n",
+            "enabled": true,
+            "tactic": "execution",
+            "techniqueID": "T1053"
+        },
+        {
+            "color": "#00ff61",
             "comment": "CBC Container can deny latest tag, limit registries, require hash tags.\n\n",
             "enabled": true,
             "tactic": "persistence",
