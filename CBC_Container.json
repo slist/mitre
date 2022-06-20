@@ -120,6 +120,13 @@
             "enabled": true,
             "tactic": "defense-evasion",
             "techniqueID": "T1612"
+        },
+	{
+            "color": "#00ff61",
+            "comment": "CBC Container can enforce CPU quotas for all pods, a cryptominer will not be able to harm the K8s cluster.\n\n",
+            "enabled": true,
+            "tactic": "impact",
+            "techniqueID": "T1496"
         }
 	],
 	"gradient": {
